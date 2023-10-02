@@ -20,3 +20,7 @@ git clone --recursive https://github.com/Microsoft/onnxruntime.git
 cd onnxruntime
 ./build.sh --config RelWithDebInfo --build_shared_lib --parallel --compile_no_warning_as_error --skip_submodule_sync
 ```
+
+#### reference
+
+[Build ONNX Runtime for inferencing](https://onnxruntime.ai/docs/build/inferencing.html)
