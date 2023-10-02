@@ -13,7 +13,7 @@ which cmake # check cmake is installed
 cmake --version # check cmake version
 ```
 
-### Install ONNXRuntime
+## Install ONNXRuntime
 
 ```bash
 git clone --recursive https://github.com/Microsoft/onnxruntime.git
