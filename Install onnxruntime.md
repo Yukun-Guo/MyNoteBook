@@ -1,5 +1,12 @@
 # Install ONNXRuntime on Linux
 
+## install from pre-built binaries
+
+Download the *.tgz file from [here](https://github.com/microsoft/onnxruntime/releases).
+Extract it. `tar -xvf onnxruntime-linux-x64-1.15.1.tgz`
+Move and include the header files in the include directory.
+Move the libonnxruntime.so dynamic library to a desired path and include it.
+
 ## Prerequisites
 
 ### python 3.x, pip3 and cmake-3.26 or higher
