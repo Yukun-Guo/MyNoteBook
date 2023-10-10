@@ -22,6 +22,7 @@ sudo apt-get update
 ```bash
 sudo apt install build-essential cmake git libgtk-3-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev openexr libatlas-base-dev libopenexr-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev python3-dev python3-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-dev gfortran -y
 ```
+if you get an error about `libdc1394-dev` then delete it from the command above and run the command again.
 
 ### Create and access a directory for the OpenCV build. In this example, the directory is called
 
@@ -63,6 +64,12 @@ make -j7
 
 ```bash
 sudo make install
+```
+
+### Update the linker
+
+```bash
+sudo ldconfig
 ```
 
 ### Verify the installation

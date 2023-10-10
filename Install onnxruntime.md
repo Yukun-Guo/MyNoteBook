@@ -6,19 +6,20 @@ Download the *.tgz file from [here](https://github.com/microsoft/onnxruntime/rel
 Extract it.
 
 ``` bash
-tar -xvf onnxruntime-linux-x64-1.15.1.tgz
+wget https://github.com/microsoft/onnxruntime/releases/download/v1.15.1/onnxruntime-linux-x64-gpu-1.15.1.tgz
+tar -xvf onnxruntime-linux-x64-gpu-1.15.1.tgz
 ```
 
 Move and include the header files in the include directory.
 
 ```bash
-sudo cp -r onnxruntime-linux-x64-1.15.1/include /usr/local/include/
+sudo cp -r onnxruntime-linux-x64-gpu-1.15.1/include/ /usr/local/include/onnxruntime
 ```
 
 Move the libonnxruntime.so dynamic library to a desired path and include it.
-    
-```bash 
-sudo cp onnxruntime-linux-x64-1.15.1/lib /usr/local/lib/
+
+```bash
+sudo cp -r onnxruntime-linux-x64-gpu-1.15.1/lib /usr/local
 sudo ldconfig
 ```
 
@@ -43,6 +44,6 @@ cd onnxruntime
 ./build.sh --config RelWithDebInfo --build_shared_lib --parallel --compile_no_warning_as_error --skip_submodule_sync
 ```
 
-#### reference
+### reference
 
 [Build ONNX Runtime for inferencing](https://onnxruntime.ai/docs/build/inferencing.html)

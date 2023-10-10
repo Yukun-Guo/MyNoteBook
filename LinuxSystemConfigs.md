@@ -13,10 +13,16 @@ sudo useradd -m -s /bin/bash <username>
 sudo passwd <username>
 ```
 
-## Add user to sudo group
+## list all groups
 
 ```bash
-sudo usermod -aG sudo <username>
+cat /etc/group
+```
+
+## Add user to stu group
+
+```bash
+sudo usermod -aG stu <username>
 ```
 
 ## Change user
