@@ -1,7 +1,7 @@
 # How to use AppImage on Ubuntu
 
 ## install FUSE
-    
+
 ```bash
 sudo apt install fuse libfuse2
 ```
@@ -19,4 +19,5 @@ sudo apt install appimagelauncher
 open the `.AppImage` file with `AppImageLauncher`
 
 ## Reference
+
 [How to Use AppImage on Ubuntu](https://www.itprotoday.com/development-techniques-and-management/why-and-how-use-appimage-ubuntu)
