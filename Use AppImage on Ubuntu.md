@@ -6,6 +6,13 @@
 sudo apt install fuse libfuse2
 ```
 
+
+## change appimage permission
+
+```bash
+chmod a+x *.AppImage
+```
+
 ## install AppImageLauncher
 
 ```bash
