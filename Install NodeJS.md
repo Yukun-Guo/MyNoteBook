@@ -1,0 +1,1 @@
+[Install Node.js 18 on Ubuntu 20.04](https://joshtronic.com/2022/04/24/how-to-install-nodejs-18-on-ubuntu-2004-lts/)
