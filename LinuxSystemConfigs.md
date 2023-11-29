@@ -71,6 +71,25 @@ sudo chmod -R 755 /home/<username>/<diskX_yT>
 sudo umount /dev/<sdf2>
 ```
 
+### Add new disk
+    
+```bash
+# List all disks
+lsblk
+# Create partition
+sudo parted /dev/sdX
+# Type: mklabel gpt
+# Type: mkpart primary 0% 100%
+# Type: quit
+# Format partition
+sudo mkfs.ext4 /dev/sdXy
+# Mount disk
+sudo mount /dev/sdXy /home/<username>/<diskX_yT>
+# Set permissions
+sudo chown -R <username>:<username> /home/<username>/<diskX_yT>
+sudo chmod -R 755 /home/<username>/<diskX_yT>
+```
+
 ## Reconnect Internet
 
 ```bash
