@@ -96,3 +96,37 @@ sudo chmod -R 755 /home/<username>/<diskX_yT>
 sudo systemctl restart network-manager # or
 sudo ifconfig <interface> up # example: sudo ifconfig eno2 up
 ```
+
+## create shared folders on Ubuntu for Windows users
+
+```bash
+sudo apt-get install samba
+sudo mkdir /home/<username>/shared
+sudo chmod 777 /home/<username>/shared
+sudo nano /etc/samba/smb.conf
+```
+
+### Add following lines to the end of the file
+
+```bash
+[shared]
+path = /home/<username>/shared
+available = yes
+valid users = <username>
+read only = no
+browsable = yes
+public = yes
+writable = yes
+```
+
+### Restart samba service
+
+```bash
+sudo service smbd restart
+```
+
+### Access shared folders on Windows, set map network drive
+
+```bash
+\\<ip-address>\shared
+``````
