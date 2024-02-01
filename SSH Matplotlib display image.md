@@ -40,3 +40,10 @@ python3 test.py
 export DISPLAY=localhost:10.0
 python3 test.py
 ```
+
+### set DISPLAY in .bashrc
+
+```bash
+echo "export DISPLAY=localhost:10.0" >> ~/.bashrc
+source ~/.bashrc
+```
