@@ -123,6 +123,9 @@ writable = yes
 
 ```bash
 sudo service smbd restart
+
+sudo ifconfig eno2 up
+
 ```
 
 ### Access shared folders on Windows, set map network drive
