@@ -3,7 +3,8 @@
 ## Change to root user
 
 ```bash
-sudo su
+sudo su 
+serverroot2021
 ```
 
 ## Add new user with create home directory and set password
